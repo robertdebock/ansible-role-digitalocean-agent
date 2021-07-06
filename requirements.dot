@@ -1,0 +1,13 @@
+digraph PhiloDilemma {
+  label = "Robert de Bock" ;
+  overlap=false
+  {
+    "digitalocean_agent" [fillcolor=yellow style=filled penwidth=3]
+    "robertdebock.apt_autostart" [fillcolor=green style=filled]
+    "robertdebock.bootstrap" [fillcolor=green style=filled]
+    "robertdebock.ca_certificates" [fillcolor=green style=filled]
+  }
+  "digitalocean_agent" -> "robertdebock.apt_autostart"
+  "digitalocean_agent" -> "robertdebock.bootstrap"
+  "digitalocean_agent" -> "robertdebock.ca_certificates"
+}
